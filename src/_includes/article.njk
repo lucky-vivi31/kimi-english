@@ -1,0 +1,114 @@
+---
+layout: base.njk
+---
+<article class="article-page">
+  <header class="article-header">
+    <div class="article-meta">
+      <span class="level-badge level-{{ level | lower | replace(" ", "-") }}">{{ level }}</span>
+      <span class="character-values">{{ characterValues }}</span>
+    </div>
+    <h1>{{ title }}</h1>
+    <div class="tag-list">
+      {% for tag in tags %}
+        {% if tag != "article" %}
+        <a href="/tags/{{ tag | slugify }}/" class="tag-pill">{{ tag }}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="article-actions no-print">
+      <button onclick="window.print()" class="btn btn-print">Print / Download</button>
+    </div>
+  </header>
+
+  <section class="story-section">
+    <h2>Story</h2>
+    <div class="story-text">
+      {{ content | safe }}
+    </div>
+  </section>
+
+  {% if vocabulary and vocabulary.length %}
+  <section class="vocab-section">
+    <h2>Key Vocabulary</h2>
+    <div class="vocab-table-wrap">
+      <table class="vocab-table">
+        <thead>
+          <tr>
+            <th>Word</th>
+            <th>Chinese</th>
+            <th>Example Sentence</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for v in vocabulary %}
+          <tr>
+            <td class="vocab-word">{{ v.word }}</td>
+            <td class="vocab-chinese">{{ v.chinese }}</td>
+            <td class="vocab-example">{{ v.example }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </section>
+  {% endif %}
+
+  {% if grammar and grammar.length %}
+  <section class="grammar-section">
+    <h2>Grammar Focus</h2>
+    <div class="grammar-cards">
+      {% for g in grammar %}
+      <div class="grammar-card">
+        <h3>{{ g.tense }}</h3>
+        <p class="grammar-desc">{{ g.description }}</p>
+        <p class="grammar-structure"><strong>Structure:</strong> {{ g.structure }}</p>
+        <div class="grammar-examples">
+          {% for ex in g.examples %}
+          <div class="grammar-example">
+            <span class="english">{{ ex.english }}</span>
+            <span class="chinese">{{ ex.chinese }}</span>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if quiz and quiz.length %}
+  <section class="quiz-section no-print">
+    <h2>Reading Comprehension Quiz</h2>
+    <div class="quiz-container" id="quiz">
+      {% for q in quiz %}
+      <div class="quiz-question" data-correct="{{ q.answer }}">
+        <p class="question-text"><strong>{{ loop.index }}.</strong> {{ q.question }}</p>
+        <div class="quiz-options">
+          {% for opt in q.options %}
+          <button class="quiz-option" data-index="{{ loop.index0 }}">
+            <span class="option-letter">{{ "ABCD" | truncate(loop.index, true, "") }}</span>
+            {{ opt }}
+          </button>
+          {% endfor %}
+        </div>
+        <div class="quiz-feedback"></div>
+      </div>
+      {% endfor %}
+      <div class="quiz-results" id="quiz-results">
+        <button class="btn btn-check" onclick="checkQuiz()">Check My Answers</button>
+        <div class="quiz-score" id="quiz-score"></div>
+      </div>
+    </div>
+    <script src="/js/quiz.js"></script>
+  </section>
+  {% endif %}
+
+  {% if learningTip %}
+  <section class="tip-section">
+    <h2>Learning Tip</h2>
+    <div class="tip-box">
+      <p>{{ learningTip }}</p>
+    </div>
+  </section>
+  {% endif %}
+</article>

@@ -1,0 +1,57 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "src/images"
+public_folder: "/images"
+
+collections:
+  - name: "articles"
+    label: "Articles"
+    folder: "src/articles"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Level", name: "level", widget: "select", options: ["Level 2", "Big Sky"] }
+      - { label: "Order", name: "order", widget: "number", value_type: "int" }
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        default: ["article"]
+        field: { label: "Tag", name: "tag", widget: "string" }
+      - { label: "Character Values", name: "characterValues", widget: "string" }
+      - label: "Vocabulary"
+        name: "vocabulary"
+        widget: "list"
+        fields:
+          - { label: "Word", name: "word", widget: "string" }
+          - { label: "Chinese", name: "chinese", widget: "string" }
+          - { label: "Example", name: "example", widget: "string" }
+      - label: "Grammar"
+        name: "grammar"
+        widget: "list"
+        fields:
+          - { label: "Tense", name: "tense", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Structure", name: "structure", widget: "string" }
+          - label: "Examples"
+            name: "examples"
+            widget: "list"
+            fields:
+              - { label: "English", name: "english", widget: "string" }
+              - { label: "Chinese", name: "chinese", widget: "string" }
+      - label: "Quiz"
+        name: "quiz"
+        widget: "list"
+        fields:
+          - { label: "Question", name: "question", widget: "string" }
+          - label: "Options"
+            name: "options"
+            widget: "list"
+            field: { label: "Option", name: "option", widget: "string" }
+          - { label: "Correct Answer (0-based index)", name: "answer", widget: "number", value_type: "int" }
+      - { label: "Learning Tip", name: "learningTip", widget: "string" }
+      - { label: "Story Body", name: "body", widget: "markdown" }

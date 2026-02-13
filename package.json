@@ -1,0 +1,12 @@
+{
+  "name": "kimi-english",
+  "version": "1.0.0",
+  "description": "Kimi's English Learning Website",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}

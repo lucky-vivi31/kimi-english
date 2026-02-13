@@ -1,0 +1,96 @@
+/* Print Styles */
+@page {
+  margin: 1.5cm;
+}
+
+body {
+  font-size: 12pt;
+  line-height: 1.6;
+  color: #000;
+  background: white;
+}
+
+.no-print {
+  display: none !important;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0;
+}
+
+.article-header {
+  text-align: left;
+  padding: 0 0 10pt;
+  border-bottom: 2pt solid #000;
+  margin-bottom: 12pt;
+}
+
+.article-header h1 {
+  font-size: 18pt;
+  color: #000;
+  -webkit-text-fill-color: #000;
+  background: none;
+}
+
+.level-badge {
+  border: 1pt solid #000;
+  color: #000;
+  background: none;
+}
+
+.tag-pill {
+  border: 1pt solid #666;
+  color: #333;
+  background: none;
+}
+
+.story-text {
+  box-shadow: none;
+  padding: 10pt 0;
+  border: none;
+}
+
+.vocab-table {
+  box-shadow: none;
+  border: 1pt solid #ccc;
+}
+
+.vocab-table th {
+  background: #eee;
+  color: #000;
+}
+
+.vocab-table td {
+  border-bottom: 0.5pt solid #ccc;
+}
+
+.vocab-word { color: #000; }
+.vocab-chinese { color: #333; }
+
+.grammar-card {
+  box-shadow: none;
+  border: 1pt solid #ccc;
+  border-left: 3pt solid #666;
+  page-break-inside: avoid;
+}
+
+.grammar-card h3 { color: #000; }
+
+.grammar-example {
+  background: #f5f5f5;
+}
+
+.tip-box {
+  border: 1pt solid #ccc;
+  background: #fafafa;
+}
+
+section {
+  page-break-inside: avoid;
+}
+
+h2 {
+  color: #000 !important;
+  border-bottom-color: #ccc !important;
+}

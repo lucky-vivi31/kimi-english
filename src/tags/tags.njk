@@ -1,0 +1,39 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - article
+    - articles
+    - tagList
+  addAllPagesToCollections: false
+permalink: /tags/{{ tag | slugify }}/index.html
+layout: base.njk
+eleventyComputed:
+  title: "Tag: {{ tag }}"
+---
+<section class="tag-page">
+  <h1>{{ tag }}</h1>
+  <p><a href="/">&larr; Back to all stories</a></p>
+  <div class="article-grid">
+    {% set taggedArticles = collections[tag] %}
+    {% for article in taggedArticles %}
+    {% if article.data.tags and "article" in article.data.tags %}
+    <a href="{{ article.url }}" class="article-card">
+      <div class="card-level level-{{ article.data.level | lower | replace(' ', '-') }}">{{ article.data.level }}</div>
+      <h3>{{ article.data.title }}</h3>
+      <p class="card-values">{{ article.data.characterValues }}</p>
+      <div class="card-tags">
+        {% for t in article.data.tags %}
+          {% if t != "article" %}
+          <span class="card-tag">{{ t }}</span>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </a>
+    {% endif %}
+    {% endfor %}
+  </div>
+</section>
