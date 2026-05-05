@@ -82,41 +82,41 @@ grammar:
         chinese: 她將成為最好的寵物主人
     structure: "will + 動詞原形 "
 quiz:
-  - question: "1. What is special about a hamster's cheeks? "
+  - question: "What is special about a hamster's cheeks? "
     options:
       - "They change color "
       - "They can stretch to almost the size of their body to store food "
       - "They are very cold "
       - "They glow in the dark "
-    answer: 2
-  - question: 2. What does 'nocturnal' mean?
+    answer: 1
+  - question: What does 'nocturnal' mean?
     options:
       - "Animals that love water "
       - Animals that are most active at night
       - "Animals that sleep all day and night "
       - "Animals that eat only plants "
-    answer: 2
-  - question: 3. What did Chloe do when Mochi was not feeling well?
+    answer: 1
+  - question: What did Chloe do when Mochi was not feeling well?
     options:
       - She ignored him
       - "She gently stroked his fur and spoke to him calmly "
       - She gave him a bath
       - "She put him outside "
-    answer: 2
-  - question: 4. What did Chloe learn from Mochi being sick?
+    answer: 1
+  - question: What did Chloe learn from Mochi being sick?
     options:
       - "Hamsters get sick easily "
       - Loving an animal means being gentle and patient
       - It is hard to have a pet
       - She should get a different pet
-    answer: 2
-  - question: "5. What is the main message of this story? "
+    answer: 1
+  - question: "What is the main message of this story? "
     options:
       - "Hamsters are difficult to keep "
       - "Caring for a pet with love and gentleness teaches us responsibility "
       - Only big animals make good pets
       - Pets should stay outside
-    answer: 2
+    answer: 1
 learningTip: "請用三種時態（現在、過去、未來）寫出關於你如何照顧動物或寵物的句子：   Present (現在): I
   _____________________ (你現在如何對待動物)   Past (過去): Last time, I
   _____________________ (你上次與動物互動的經驗)   Future (未來): Someday, I will
