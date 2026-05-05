@@ -90,14 +90,14 @@ quiz:
         rain   "
       - "A machine that makes clean water  "
       - " A type of weather"
-    answer: 2
+    answer: 1
   - question: What happens when water evaporates?
     options:
       - "It turns into ice   "
       - "It turns into invisible water vapor and rises into the sky   "
       - "It becomes salty   "
       - "It falls as snow "
-    answer: 2
+    answer: 1
   - question: What did Sam's teacher use to demonstrate the water cycle?
     options:
       - "A video   "
