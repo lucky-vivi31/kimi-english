@@ -4,7 +4,6 @@ date: 2026-05-03T10:20:18.601Z
 level: Big Sky
 order: 8
 tags:
-  - Article
   - 品格Character
   - 動物Animals
 characterValues: "Love (仁愛) & Gentleness (溫柔) "
