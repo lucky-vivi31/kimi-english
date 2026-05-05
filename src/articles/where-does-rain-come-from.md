@@ -104,7 +104,7 @@ quiz:
       - "Hot water in a jar with a plate of ice on top   "
       - "A fish tank   "
       - "A raincoat "
-    answer: 2
+    answer: 1
   - question: "Why does Sam feel grateful for rain now? "
     options:
       - "Because rain is fun to play in   "
@@ -112,14 +112,14 @@ quiz:
         is precious   "
       - "Because rain makes rainbows   "
       - "Because rain fills the swimming pool "
-    answer: 2
+    answer: 1
   - question: What will Sam do from now on?
     options:
       - "Avoid rain completely   "
       - "Think about the water cycle and try to save water every day   "
       - "Stop studying science   "
       - "Only drink juice instead of water "
-    answer: 2
+    answer: 1
 learningTip: "Challenge Activity (挑戰活動)   請用三種時態（現在、過去、未來）寫出關於大自然的句子：   Present
   (現在): I _____________________ (你現在對大自然哪件事最好奇)   Past (過去): Last time it
   rained, I _____________________ (你上次下雨時做了什麼)   Future (未來): To save water, I
