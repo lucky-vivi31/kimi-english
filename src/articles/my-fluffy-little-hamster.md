@@ -85,39 +85,39 @@ grammar:
 quiz:
   - question: "1. What is special about a hamster's cheeks? "
     options:
-      - "A) They change color "
-      - "B) They can stretch to almost the size of their body to store food "
-      - "C) They are very cold "
-      - "D) They glow in the dark "
+      - "They change color "
+      - "They can stretch to almost the size of their body to store food "
+      - "They are very cold "
+      - "They glow in the dark "
     answer: 2
   - question: 2. What does 'nocturnal' mean?
     options:
-      - "A) Animals that love water "
-      - B) Animals that are most active at night
-      - "C) Animals that sleep all day and night "
-      - "D) Animals that eat only plants "
+      - "Animals that love water "
+      - Animals that are most active at night
+      - "Animals that sleep all day and night "
+      - "Animals that eat only plants "
     answer: 2
   - question: 3. What did Chloe do when Mochi was not feeling well?
     options:
-      - A) She ignored him
-      - "B) She gently stroked his fur and spoke to him calmly "
-      - C) She gave him a bath
-      - "D) She put him outside "
+      - She ignored him
+      - "She gently stroked his fur and spoke to him calmly "
+      - She gave him a bath
+      - "She put him outside "
     answer: 2
   - question: 4. What did Chloe learn from Mochi being sick?
     options:
-      - "A) Hamsters get sick easily "
-      - B) Loving an animal means being gentle and patient
-      - C) It is hard to have a pet
-      - D) She should get a different pet
+      - "Hamsters get sick easily "
+      - Loving an animal means being gentle and patient
+      - It is hard to have a pet
+      - She should get a different pet
     answer: 2
   - question: "5. What is the main message of this story? "
     options:
-      - "A) Hamsters are difficult to keep "
-      - "B) Caring for a pet with love and gentleness teaches us responsibility "
-      - C) Only big animals make good pets
-      - D) Pets should stay outside
-    answer: 0
+      - "Hamsters are difficult to keep "
+      - "Caring for a pet with love and gentleness teaches us responsibility "
+      - Only big animals make good pets
+      - Pets should stay outside
+    answer: 2
 learningTip: "請用三種時態（現在、過去、未來）寫出關於你如何照顧動物或寵物的句子：   Present (現在): I
   _____________________ (你現在如何對待動物)   Past (過去): Last time, I
   _____________________ (你上次與動物互動的經驗)   Future (未來): Someday, I will
