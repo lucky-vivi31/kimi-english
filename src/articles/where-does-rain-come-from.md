@@ -85,40 +85,40 @@ grammar:
 quiz:
   - question: What is the water cycle?
     options:
-      - "A) A type of bicycle that rides on water   "
-      - "B) A continuous journey that water takes through evaporation, clouds,
-        and rain   "
-      - "C) A machine that makes clean water  "
-      - " D) A type of weather"
+      - "A type of bicycle that rides on water   "
+      - "A continuous journey that water takes through evaporation, clouds, and
+        rain   "
+      - "A machine that makes clean water  "
+      - " A type of weather"
     answer: 2
   - question: What happens when water evaporates?
     options:
-      - "A) It turns into ice   "
-      - "B) It turns into invisible water vapor and rises into the sky   "
-      - "C) It becomes salty   "
-      - "D) It falls as snow "
+      - "It turns into ice   "
+      - "It turns into invisible water vapor and rises into the sky   "
+      - "It becomes salty   "
+      - "It falls as snow "
     answer: 2
   - question: What did Sam's teacher use to demonstrate the water cycle?
     options:
-      - "A) A video   "
-      - "B) Hot water in a jar with a plate of ice on top   "
-      - "C) A fish tank   "
-      - "D) A raincoat "
+      - "A video   "
+      - "Hot water in a jar with a plate of ice on top   "
+      - "A fish tank   "
+      - "A raincoat "
     answer: 2
   - question: "Why does Sam feel grateful for rain now? "
     options:
-      - "A) Because rain is fun to play in   "
-      - "B) Because every raindrop has traveled on an incredible journey and
-        water is precious   "
-      - "C) Because rain makes rainbows   "
-      - "D) Because rain fills the swimming pool "
+      - "Because rain is fun to play in   "
+      - "Because every raindrop has traveled on an incredible journey and water
+        is precious   "
+      - "Because rain makes rainbows   "
+      - "Because rain fills the swimming pool "
     answer: 2
   - question: What will Sam do from now on?
     options:
-      - "A) Avoid rain completely   "
-      - "B) Think about the water cycle and try to save water every day   "
-      - "C) Stop studying science   "
-      - "D) Only drink juice instead of water "
+      - "Avoid rain completely   "
+      - "Think about the water cycle and try to save water every day   "
+      - "Stop studying science   "
+      - "Only drink juice instead of water "
     answer: 2
 learningTip: "Challenge Activity (挑戰活動)   請用三種時態（現在、過去、未來）寫出關於大自然的句子：   Present
   (現在): I _____________________ (你現在對大自然哪件事最好奇)   Past (過去): Last time it
