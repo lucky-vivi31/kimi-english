@@ -86,7 +86,7 @@ layout: base.njk
         <div class="quiz-options">
           {% for opt in q.options %}
           <button class="quiz-option" data-index="{{ loop.index0 }}">
-            <span class="option-letter">{{ "ABCD" | truncate(loop.index, true, "") }}</span>
+            <span class="option-letter">{{ ["A","B","C","D"][loop.index0] }}</span>
             {{ opt }}
           </button>
           {% endfor %}
